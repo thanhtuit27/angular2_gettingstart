@@ -1,0 +1,29 @@
+
+table thead th{text-align: left;}
+
+.row{display: block;width: 100%;min-height: 30px;}
+.nav{
+    width: 100%;
+    display: block;
+    height:50px;
+}
+ul.menu{
+    margin: 0px;
+    padding: 0px;
+}
+ul.menu li{
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.content{
+    width: 100%;
+    border: 1px solid gray;
+}
+
+
+.create-user{}
+.create-user .row{padding-left: 20px;}
+.create-user .row label{width:100px;display: block;float: left;}
+.create-user .row input{width:200px;float: left;}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular</title>
+  <link href="app/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <default-layout></default-layout>
+  <!--<script src="systemjs.conf.js"></script>-->
+  <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+  <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+  <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.js"></script>
+  <script src="node_modules/angular2/bundles/router.js"></script>
+  <script src="node_modules/angular2/bundles/http.js"></script>
+  <script>
+    System.config({
+      packages:{
+        app: {format: 'register',defaultExtension: 'js'}
+      }
+    });
+    System.import('app/main.js').then(null, console.error.bind(console));
+  </script>
+</body>
+
+</html>
